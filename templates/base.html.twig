@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/axentix@0.5.3/dist/css/axentix.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+        {% block stylesheets %} {% endblock %}
+            <link rel="stylesheet" href="{{ asset('assets/css/style2.css') }}" type="text/css"/>
+		
+		<link href='http://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'/>
+
+	</head>
+    <div class="photo">
+
+	<body id="photo"style="background-image: url(images/1ter.jpg)">
+	</div>
+
+		<div class="container">
+			<div class="header">
+
+            <a href="{{ path('home') }}"><h1>LA CRISE DE LA VINGTAINE</h1></a>
+
+            <div class="content">
+				<ul class="menu">
+					{% if is_granted("ROLE_ADMIN") %}
+						<li>
+							<a href="{{ path('app_logout') }}">Tableau de bord</a>
+						</li>
+						<li>
+							<a href="{{ path('app_logout') }}">Me déconnecter</a>
+						</li>
+
+					{% else %}
+					{% if app.user %}
+						<li>
+							<a href="{{ path('rdv') }}">Prendre rendez-vous</a>
+						</li>
+						<li>
+							<a href="{{ path('contact') }}">Me contacter</a>
+						</li>
+						<li>
+							<a href="#">Qui suis-je ?</a>
+						</li>
+						<li>
+							<a href="{{ path('services') }}">Mes services</a>
+						</li>
+						<li>
+							<a href="{{ path('app_logout') }}">Me déconnecter</a>
+						</li>
+
+					{% else %}
+						<li>
+							<a href="#">Qui suis-je ?</a>
+						</li>
+						<li>
+							<a href="{{ path('services') }}">Mes services</a>
+						</li>
+						<li>
+							<a href="{{ path('rdv') }}">Prendre rendez-vous</a>
+						</li>
+						<li>
+							<a href="{{ path('contact') }}">Me contacter</a>
+						</li>
+						<li>
+							<a href="{{ path('app_register') }}">M'inscrire</a>
+						</li>
+						<li>
+							<a href="{{ path('app_login') }}">Me connecter</a>
+						</li>
+					{% endif %}
+					{% endif %}
+				
+				</ul>
+				<div class="clr"> </div>
+			</div>
+
+			{% for flash in app.flashes('success') %}
+            <div class="alert alert-success">{{ flash }}</div>
+        	{% endfor %}
+
+			{% for flash in app.flashes('error') %}
+            <div class="alert alert-danger">{{ flash }}</div>
+        	{% endfor %}
+
+		{% block body%} {% endblock %}
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+	</body>
+</html>

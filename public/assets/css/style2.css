@@ -1,0 +1,63 @@
+/* base.html.twig */
+h1
+{
+    text-align: center;
+	color: cornsilk;
+}
+
+.menu{
+    padding: 0px;
+    margin: 0 0 10px 0;
+    position: relative;
+}
+.menu li{
+    font-size: 25px;
+    display: block;
+}
+.menu li a{
+	color: transparent;
+	display: block;
+	text-transform: uppercase;
+	text-shadow: 0px 0px 4px #fff;
+	letter-spacing: 1px;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+.menu:hover li a{
+	text-shadow: 0px 0px 6px #fff;
+}
+.menu li a:hover{
+	color: #fff;
+	text-shadow: 0px 0px 1px #fff;
+	padding-left: 10px;
+}
+
+/* home/index.html.twig */
+h6
+{
+    text-align: center;
+    color: lightskyblue;
+    font-size: 50px;
+}
+
+p
+{
+    color: lightsteelblue;
+    font-weight: 700;
+}
+
+/* registration/register.html.twig */
+.register
+{
+	/* color: tomato; */
+    font-weight: 850;
+}
+
+/* connexion/login.html.twig */
+.login
+{
+    font-weight: 850;
+}
