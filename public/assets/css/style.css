@@ -1,8 +1,8 @@
 /* base.html.twig */
-h1
+.container h1
 {
     text-align: center;
-	color: cornsilk;
+	color: black;
 }
 
 .menu{
@@ -15,10 +15,10 @@ h1
     display: block;
 }
 .menu li a{
-	color: transparent;
+	color: azure;
 	display: block;
 	text-transform: uppercase;
-	text-shadow: 0px 0px 4px #fff;
+	text-shadow: 0px 0px 4px white;
 	letter-spacing: 1px;
 	-webkit-transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
@@ -27,25 +27,35 @@ h1
 	transition: all 0.2s ease-in-out;
 }
 .menu:hover li a{
-	text-shadow: 0px 0px 6px #fff;
+	text-shadow: 0px 0px 6px white;
 }
 .menu li a:hover{
-	color: #fff;
-	text-shadow: 0px 0px 1px #fff;
+	color: black;
+	text-shadow: 0px 0px 1px white;
 	padding-left: 10px;
 }
 
-/* home/index.html.twig */
+/* home/index.html.twig 
+   presentation/index.html.twig
+   services/index.html.twig
+   
+*/
+
+#img1 {
+	width: 10px;
+	height: 10px;
+}
 h6
-{
+{	
+	text-transform : uppercase;
     text-align: center;
-    color: lightskyblue;
+    color: black;
     font-size: 50px;
 }
 
 p
 {
-    color: lightsteelblue;
+    color: white;
     font-weight: 700;
 }
 

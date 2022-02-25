@@ -1,8 +1,8 @@
 /* base.html.twig */
 h1
 {
-    text-align: center;
-	color: cornsilk;
+    /* text-align: center; */
+	color: black;
 }
 
 .menu{
@@ -15,10 +15,10 @@ h1
     display: block;
 }
 .menu li a{
-	color: transparent;
+	color: black;
 	display: block;
 	text-transform: uppercase;
-	text-shadow: 0px 0px 4px #fff;
+	text-shadow: 0px 0px 4px black;
 	letter-spacing: 1px;
 	-webkit-transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
@@ -27,37 +27,36 @@ h1
 	transition: all 0.2s ease-in-out;
 }
 .menu:hover li a{
-	text-shadow: 0px 0px 6px #fff;
+	text-shadow: 0px 0px 6px black;
 }
 .menu li a:hover{
-	color: #fff;
-	text-shadow: 0px 0px 1px #fff;
+	color: black;
+	text-shadow: 0px 0px 1px black;
 	padding-left: 10px;
 }
 
-/* home/index.html.twig */
+/* home/index.html.twig 
+   presentation/index.html.twig
+   services/index.html.twig
+   
+*/
 h6
-{
+{	
+	text-transform : uppercase;
     text-align: center;
-    color: lightskyblue;
+    color: black;
     font-size: 50px;
 }
 
 p
 {
-    color: lightsteelblue;
+    color: white;
     font-weight: 700;
 }
 
 /* registration/register.html.twig */
-.register
+h1
 {
-	/* color: tomato; */
-    font-weight: 850;
-}
-
-/* connexion/login.html.twig */
-.login
-{
-    font-weight: 850;
+	color: cornsilk;
+	/* color: lightseagreen; */
 }

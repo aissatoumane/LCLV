@@ -1,21 +1,31 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
+<br>
+<br>
+<br>
+<br>
+	<p>
+		Pour me poser une question, suggérer une idée ou simplement m’encourager, remplis le formulaire ci-dessous. <br>
+		Je ferai mon possible pour te répondre dans les 48h (hors week-ends) :)</p>
+
 	<div class="bg-white p-5 contact-form">
 		<div class="form-group">
 			{{ form_start(form) }}
 			{{ form_row(form.nom, {'attr': {'class': 'form-control'}}) }}
 		</div>
+		<br>
 		<div class="form-group">
 			{{ form_row(form.email, {'attr': {'class': 'form-control'}}) }}
 		</div>
+		<br>
 		<div class="form-group">
 			{{ form_row(form.message, {'attr': {'class': 'form-control'}}) }}
 		</div>
+		<br>
 		<div class="form-group">
 			<input type="submit" value="Send" class="btn btn-primary py-3 px-5">
 		</div>
 		{{ form_end(form) }}
-	    </div>
-    </div>
-{% endblock %}
+	</div>
+</div>{% endblock %}

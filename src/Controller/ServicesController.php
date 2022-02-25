@@ -13,7 +13,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 class ServicesController extends AbstractController
 {
     /**
-     * @Route("mes_services", name="services")
+     * @Route("mes-services", name="services")
      */
     public function index(): Response
     {
