@@ -6,6 +6,10 @@
 	background-position: center;
 } */
 
+* {
+	font-family: 'Architects Daughter', cursive;
+}
+
 #titre
 {
     text-align: center;
@@ -19,7 +23,6 @@
     padding: 0px;
     margin: 0 0 10px 0;
     position: relative;
-	font-family: 'Architects Daughter', cursive;
 	/* font-family: 'Montserrat Alternates', sans-serif; */
 	font-weight: 500;
 }
@@ -74,7 +77,6 @@
     text-align: center;
     color: black;
     font-size: 40px;
-	font-family: 'Architects Daughter', cursive;
 /* 	font-family: 'Montserrat Alternates', sans-serif;
  */}
 
@@ -90,7 +92,6 @@
     /* color: white; */
 	font-size: 20px;
     font-weight: 500 ;
-	font-family: 'Architects Daughter', cursive;
 /* 	font-family: 'Montserrat Alternates', sans-serif;
  */	text-align: center;
 }
