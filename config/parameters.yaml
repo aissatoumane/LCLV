@@ -1,0 +1,11 @@
+parameters:
+    database_host: db5006804895.hosting-data.io
+    database_port: 3306
+    database_name: dbs5618409
+    database_user: dbu2457081
+    database_password: Root1Root2
+    mailer_transport: 
+    mailer_host:
+    mailer_user:
+    mailer_password:
+    secret:

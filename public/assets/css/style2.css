@@ -1,38 +1,24 @@
 /* base.html.twig */
-/* .photo { 
-	background-image: url(images/site_background4-2.jpg);
-	background-size: cover;
-	background-attachment: fixed;
-	background-position: center;
-} */
-
-#titre
+h1
 {
-    text-align: center;
+    /* text-align: center; */
 	color: black;
-	/* font-family: 'Architects Daughter', cursive; */
-	font-family: 'Barriecito', cursive;
-	font-weight: bold;
 }
 
 .menu{
     padding: 0px;
     margin: 0 0 10px 0;
     position: relative;
-	font-family: 'Architects Daughter', cursive;
-	/* font-family: 'Montserrat Alternates', sans-serif; */
-	font-weight: 500;
 }
 .menu li{
-    font-size: 15px;
+    font-size: 25px;
     display: block;
 }
 .menu li a{
 	color: black;
-	/* color: azure; */
 	display: block;
 	text-transform: uppercase;
-	text-shadow: 0px 0px 4px white;
+	text-shadow: 0px 0px 4px black;
 	letter-spacing: 1px;
 	-webkit-transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
@@ -42,12 +28,10 @@
 }
 .menu:hover li a{
 	text-shadow: 0px 0px 6px black;
-	/* text-shadow: 0px 0px 6px white; */
 }
 .menu li a:hover{
 	color: black;
 	text-shadow: 0px 0px 1px black;
-	/* text-shadow: 0px 0px 1px white; */
 	padding-left: 10px;
 }
 
@@ -56,58 +40,23 @@
    services/index.html.twig
    
 */
-
-#img1 {
-	width: 60px;
-	height: 60px;
-}
-
-#img2 {
-	width: 60px;
-	height: 60px;
-}
-
-#bonjour,
-#services,
-#presentation {	
+h6
+{	
 	text-transform : uppercase;
     text-align: center;
     color: black;
-    font-size: 40px;
-	font-family: 'Architects Daughter', cursive;
-/* 	font-family: 'Montserrat Alternates', sans-serif;
- */}
-
-#accueil p,
-#bouton-blog,
-#bouton-coaching,
-#bouton-appel,
-#bouton-LCLV,
-#bouton-visio,
-#qui-suis-je,
-#qui-suis-je-suite {	
-	color: black;
-    /* color: white; */
-	font-size: 20px;
-    font-weight: 500 ;
-	font-family: 'Architects Daughter', cursive;
-/* 	font-family: 'Montserrat Alternates', sans-serif;
- */	text-align: center;
+    font-size: 50px;
 }
 
-#qui-suis-je,
-#qui-suis-je-suite {
-	font-size: 17px;
-}
-
-#disclaimer {
-	font-size: 14px;
+p
+{
+    color: white;
+    font-weight: 700;
 }
 
 /* registration/register.html.twig */
 h1
 {
-	color: black;
-	/* color: cornsilk; */
+	color: cornsilk;
 	/* color: lightseagreen; */
 }

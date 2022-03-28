@@ -1,38 +1,32 @@
-/* base.html.twig */
-/* .photo { 
-	background-image: url(images/site_background4-2.jpg);
-	background-size: cover;
-	background-attachment: fixed;
-	background-position: center;
-} */
-
-* {
-	font-family: 'Architects Daughter', cursive;
-}
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Audiowide&family=Barriecito&family=Josefin+Sans:wght@100;400&family=Lato:wght@700&family=Montserrat+Alternates:wght@400;500;600&family=Rambla&display=swap');
 
 #titre
 {
     text-align: center;
 	color: black;
-	/* font-family: 'Architects Daughter', cursive; */
 	font-family: 'Barriecito', cursive;
 	font-weight: bold;
+	padding-top: 30px;
+	font-size: 45px;
+}
+
+.content {
+	z-index: 10;
 }
 
 .menu{
     padding: 0px;
     margin: 0 0 10px 0;
     position: relative;
-	/* font-family: 'Montserrat Alternates', sans-serif; */
+	font-family: 'Lato', cursive;
 	font-weight: 500;
 }
 .menu li{
-    font-size: 15px;
+    font-size: 10px;
     display: block;
 }
 .menu li a{
 	color: black;
-	/* color: azure; */
 	display: block;
 	text-transform: uppercase;
 	text-shadow: 0px 0px 4px white;
@@ -45,12 +39,10 @@
 }
 .menu:hover li a{
 	text-shadow: 0px 0px 6px black;
-	/* text-shadow: 0px 0px 6px white; */
 }
 .menu li a:hover{
 	color: black;
 	text-shadow: 0px 0px 1px black;
-	/* text-shadow: 0px 0px 1px white; */
 	padding-left: 10px;
 }
 
@@ -72,15 +64,35 @@
 
 #bonjour,
 #services,
-#presentation {	
+#presentation {
+	padding-top: 30px;	
 	text-transform : uppercase;
     text-align: center;
     color: black;
     font-size: 40px;
-/* 	font-family: 'Montserrat Alternates', sans-serif;
- */}
+	font-family: 'Lato', cursive;
+}
 
-#accueil p,
+section {
+	text-align: center;
+}
+
+#stackable {
+	display: inline-block;
+	margin: 5px;
+}
+
+#actualités,
+#coaching {
+	font-size: 20px;
+}
+
+.uk-animation-toggle {
+	display: inline-block;
+	margin: 2px;
+}
+
+#accueil,
 #bouton-blog,
 #bouton-coaching,
 #bouton-appel,
@@ -89,11 +101,10 @@
 #qui-suis-je,
 #qui-suis-je-suite {	
 	color: black;
-    /* color: white; */
 	font-size: 20px;
     font-weight: 500 ;
-/* 	font-family: 'Montserrat Alternates', sans-serif;
- */	text-align: center;
+	font-family: 'Lato', cursive;
+ 	text-align: center;
 }
 
 #qui-suis-je,
@@ -109,6 +120,4 @@
 h1
 {
 	color: black;
-	/* color: cornsilk; */
-	/* color: lightseagreen; */
 }
